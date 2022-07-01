@@ -1,0 +1,124 @@
+
+.CompactCard{
+    display: flex;
+    flex: 1;
+    position: relative;
+    height: 7rem !important;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+
+}
+
+.CompactCard:hover{
+    box-shadow: none !important;
+}
+
+/* radial bar */
+
+.RadialBar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.CircularProgressbar{
+    width: 4rem !important;
+    overflow: visible;
+}
+
+.CircularProgressbar-path{
+    stroke: white !important;
+    stroke-width: 12px !important;
+    filter: drop-shadow(2px 3px 4px white) !important;
+}
+
+.CircularProgressbar-trail{
+  display:  none !important;
+}
+
+.CircularProgressbar-text{
+    fill: white !important;
+}
+
+.RadialBar>span{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* details */
+
+.details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.details>span:nth-child(2){
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.details>span:nth-child(3){
+    font-size: 12px;
+    font-weight: normal;
+}
+
+
+/* expanded card */
+
+.expandedCard {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    width: 60%;
+    min-height: 60vh;
+    justify-content: space-between;
+    align-items: center;
+    left: 13rem;
+    position: absolute;
+    z-index: 9;
+    padding: 1rem;
+}
+
+.expandedCard>span:nth-child(2){
+    color: white;
+    font-size: 26px;
+    text-shadow: 0px 2px 3px white;
+    font-weight: 400;
+}
+
+
+.expandedCard>span:nth-child(4){
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.chart-container{
+    width: 60%;
+}
+
+
+@media screen and (max-width:1200px){
+    .expandedCard{
+        left: 10rem;
+        top: 4rem;
+    }
+}
+
+
+@media screen and (max-width:768px){
+    .expandedCard{
+        left: 15px;
+        height: 50%;
+        width: 80%;
+        top: 8rem;
+    }
+}
